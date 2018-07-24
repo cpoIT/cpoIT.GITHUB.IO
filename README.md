@@ -15,7 +15,7 @@ This repository is for storing what I learn about Git/GitHub. I hope others will
 
 ## Command Line Basics
 ### Moving around the Command Line
-+	|*tab button*|: complete the name of the directory/file
++	(*tab button*): complete the name of the directory/file
 +	**clear**: clears the bash screen
 
 ### High-Level User Commands aka *Porcelain Commands*
