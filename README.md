@@ -15,31 +15,31 @@ This repository is for storing what I learn about Git/GitHub. I hope others will
 
 ## Command Line Basics
 ### Moving around the Command Line
-⋅	[tab button]: complete the name of the directory/file
-⋅	clear: clears the bash screen
++	|*tab button*|: complete the name of the directory/file
++	clear: clears the bash screen
 
-### High-level user commands aka porcelain commands
-⋅	pwd (Print Working Directory):  /Users/katjohnnson
-⋅	ls (List): lists files and directories
+### High-Level User Commands aka *Porcelain Commands*
++	**pwd (Print Working Directory)**:  /Users/katsmac
++	**ls (List)**: lists files and directories
 Applications	Desktop
 Downloads		README.md
-⋅	cd (Change Directory):
-cd ..					move up one directory
-cd Desktop/			takes a directory name as an argument
-cd Downloads/git_tutorial	moves to a directory within a directory
-⋅	touch: creates a new empty file inside the working directory or updates the access date of the file without opening, saving and closing the file. 
-⋅	mkdir: create a new empty folder
++	**cd (Change Directory)**:
+  +	**cd ..**					move up one directory
+  +	**cd Desktop/**			takes a directory name as an argument
+  +	**cd Downloads/git_tutorial**	moves to a directory within a directory
++	**touch**: creates a new empty file inside the working directory or updates the access date of the file without opening, saving and closing the file. 
++	**mkdir**: create a new empty folder
 
 
 
-⋅	add: 
-⋅	commit: 
-⋅	push: 
-⋅	pull: 
-⋅	branch: 
-⋅	checkout: 
-⋅	merge: 
++	**add**: 
++	**commit**: 
++	**push**: 
++	**pull**: 
++	**branch**: 
++	**checkout**: 
++	**merge**: 
 
-### Low-level commands aka plumbing commands
-⋅	cat-file: 
-⋅	hash-object: 
+### Low-Level Commands aka *Plumbing Commands*
++	**cat-file**: 
++	**hash-object**: 
