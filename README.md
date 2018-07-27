@@ -20,12 +20,13 @@ Code and output are in `light grey boxes`. Sample output follows ==>.
 +	**clear**: clears the bash screen
 
 ### High-Level User Commands aka *Porcelain Commands*
-+	**pwd (Print Working Directory)**: returns current path directory e.g.: \
-      `pwd`\
-  ==> `/Users/katsmac`
-+	**ls (List)**: lists files and directories, e.g.:\
-Applications	Desktop\
-Downloads		README.mdls
++	**pwd (Print Working Directory)**: returns current path directory e.g.:  
+```pwd```  
+  ==> ```/Users/katsmac```
++	**ls (List)**: lists files and directories, e.g.:
+```ls
+Applications	Desktop
+Downloads		README.mdls```
 
 +	**cd (Change Directory)**:
   +	**cd ..** moves up one directory
