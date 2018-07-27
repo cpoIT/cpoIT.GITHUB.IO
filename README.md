@@ -1,6 +1,6 @@
 # Gitting Started
 
-This repository is for storing what I learn about Git/GitHub. I hope others will find it useful as well. 
+This repository is for storing what I learn about Git/GitHub. I hope other Mac users will find it useful as well. 
 Code and output are in `light grey boxes`. Sample output follows ==>.
 
 ## Setting Up Git on a Mac
@@ -23,9 +23,9 @@ Code and output are in `light grey boxes`. Sample output follows ==>.
 +	**pwd (Print Working Directory)**: returns current path directory e.g.:  
 ```pwd```  
   ==> ```/Users/katsmac```
-+	**ls (List)**: lists files and directories, e.g.:
++	**ls (List)**: lists files and directories, e.g.:  
 ```ls
-Applications	Desktop
+Applications	Desktop  
 Downloads		README.mdls```
 
 +	**cd (Change Directory)**:
