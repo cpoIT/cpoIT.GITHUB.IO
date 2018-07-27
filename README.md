@@ -1,7 +1,7 @@
 # Gitting Started
 
 This repository is for storing what I learn about Git/GitHub. I hope others will find it useful as well. 
-Code and output are in light grey boxes. Output is indicated with  ==>.
+Code and output are in `light grey boxes`. Sample output follows ==>.
 
 ## Setting Up Git on a Mac
 + Download Git from [Homebrew](https://brew.sh/)
@@ -21,15 +21,16 @@ Code and output are in light grey boxes. Output is indicated with  ==>.
 
 ### High-Level User Commands aka *Porcelain Commands*
 +	**pwd (Print Working Directory)**: returns current path directory e.g.: \
-      `pwd`
+      `pwd`\
   ==> `/Users/katsmac`
-+	**ls (List)**: lists files and directories, e.g.:
++	**ls (List)**: lists files and directories, e.g.:\
+Applications	Desktop\
+Downloads		README.mdls
 
-Applications	Desktop
-Downloads		README.md
 +	**cd (Change Directory)**:
-  +	**cd ..**					move up one directory
-  +	**cd Desktop/**			takes a directory name as an argument
+  +	**cd ..** moves up one directory
+  + **cd ~** moves to root directory
+  +	**cd Desktop/**	takes a directory name as an argument (great place to use the tab button to complete the directory name).
   +	**cd Downloads/git_tutorial**	moves to a directory within a directory
 +	**touch**: creates a new empty file inside the working directory or updates the access date of the file without opening, saving and closing the file. 
 +	**mkdir**: create a new empty folder
