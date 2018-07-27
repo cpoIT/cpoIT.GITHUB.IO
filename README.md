@@ -1,6 +1,7 @@
 # Gitting Started
 
-This repository is for storing what I learn about Git/GitHub. I hope others will find it useful as well. Jekyll automatically converts double dashes into single dashes. Triple dashes are converted into em dashes.
+This repository is for storing what I learn about Git/GitHub. I hope others will find it useful as well. 
+Code and output are in light grey boxes. Output is indicated with  ==>.
 
 ## Setting Up Git on a Mac
 + Download Git from [Homebrew](https://brew.sh/)
@@ -19,7 +20,7 @@ This repository is for storing what I learn about Git/GitHub. I hope others will
 +	**clear**: clears the bash screen
 
 ### High-Level User Commands aka *Porcelain Commands*
-+	**pwd (Print Working Directory)**: returns current path directory e.g.: 
++	**pwd (Print Working Directory)**: returns current path directory e.g.: \
       `pwd`
   ==> `/Users/katsmac`
 +	**ls (List)**: lists files and directories, e.g.:
