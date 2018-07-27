@@ -19,7 +19,9 @@ This repository is for storing what I learn about Git/GitHub. I hope others will
 +	**clear**: clears the bash screen
 
 ### High-Level User Commands aka *Porcelain Commands*
-+	**pwd (Print Working Directory)**: returns current path directory e.g.: /Users/katsmac
++	**pwd (Print Working Directory)**: returns current path directory e.g.: 
+      `pwd`
+  ==> `/Users/katsmac`
 +	**ls (List)**: lists files and directories, e.g.:
 
 Applications	Desktop
