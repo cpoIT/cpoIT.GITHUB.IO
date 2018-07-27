@@ -5,12 +5,12 @@ This repository is for storing what I learn about Git/GitHub. I hope others will
 ## Setting Up Git on a Mac
 + Download Git from [Homebrew](https://brew.sh/)
 + Run commands from the command line using the built-in Terminal or iTerm2.
-  + git ---version (list current version on local computer)
-  + git config --global user.name "Kat Fries"
-  + git config --global user.email katherynejf@gmail.com
-  + git config –list lists all Git settings
-  + git config user.name will provide 
-  + man git (full Git manual)
+  + `git --version` (list current version on local computer)
+  + `git config --global user.name "Kat Fries"`
+  + `git config --global user.email katherynejf@gmail.com`
+  + `git config –list` lists all Git settings
+  + `git config user.name` will provide user's name
+  + `man git` (full Git manual)
 
 
 ## Command Line Basics
