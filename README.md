@@ -24,9 +24,10 @@ Code and output are in `light grey boxes`. Sample output follows ==>.
 ```pwd```  
   ==> ```/Users/katsmac```
 +	**ls (List)**: lists files and directories, e.g.:  
-```ls
-Applications	Desktop  
-Downloads		README.mdls```
+```ls```
+==>
+```Applications	Desktop```  
+```Downloads		JStodo.txt```
 
 +	**cd (Change Directory)**:
   +	**cd ..** moves up one directory
@@ -142,5 +143,4 @@ OPTIONS
            displayed. See git-help(1) for more information, because git --help
            ...  is converted internally into git help ....
            
-
 
