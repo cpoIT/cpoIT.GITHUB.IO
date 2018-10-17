@@ -7,10 +7,56 @@ Next up: Start Learning React Again.
 
 I love JavaScript. It is my first programming language (unless you count an intro to BASIC on my Commodore 64 using spaghetti code aka GOTO statements). And like all first loves, every other encounter will be compared to it. I like HTML and CSS (with and without LESS and/or Flexbox). They are straight-forward, clean, and get the job done, but they lack the complexity of JavaScript. So, when I read about JSX merging JS and HTML, I was intrigued. 
 
-However, this romance has gotten off to a rocky start. With the end in sight (since my React localhost sites are a mess), I am already grieving what could have been. I quickly traversed through Denial and I am now stuck in Anger. To take the first step into bargaining with JSX, I decided to go back to the beginning and write.
+However, this romance has gotten off to a rocky start. With the end in sight (since my React localhost sites are a mess), I am already grieving what could have been. I quickly traversed through Denial and I am now stuck in Anger. To take the first step into bargaining with JSX, I decided to simultaneously continue on this path while returning to the beginning and write about this experience.
 
 ## React 101
 
+
+## AJAX & CRUD
+
+### It Begins with a JS Promise
+
+JS keeps it promises. Ask JS to log something 2 seconds after it was called and it does even while do other things. When asking for a new Promise, strings (no not those types of strings) can be attached (e.g., was the parameter less than 1000). If everything goes smoothly, resolve runs then; if not, reject is there to catch and throw and error. 
+
+**In fancy terms, promises are a way to write asyncronous code using an established design pattern.**
+
+`let bigBang = 0;
+
+const bigBangTimer = timeValue => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      bigBang = timeValue;
+      return bigBang < 1000 ? reject(bigBang): resolve(bigBang);
+    }, timeValue);
+  })
+}
+console.log('before call')
+bigBangTimer(2000)
+    .then(response => console.log('Resolved in', bigBang/1000, 'second(s)'))
+    .catch(error => console.log('Error:', error));
+console.log('after call')
+
+
+// before call
+// after call
+// Resolved in 2 second(s)`
+
+### CRUD: Create, Read, Update, Delete
+
+
+Get
+Post
+Put
+Delete
+
+HTTP / AJAX I
+In this module we’ll learn how to perform asynchronous requests in order to retrieve, create, modify, or remove information that exist on external servers.
+
+At the end of this module, you should be able to:
+describe promises and demonstrate the use of the `.then` and `.catch` methods
+explain what AJAX stands for, it's benefits and how to make AJAX requests from a React Application
+explain what HTTP is and the methods used to perform CRUD operations
+make GET requests to an external API using axios
 
 
 # Gitting Started
