@@ -1,11 +1,17 @@
 
-# The Never Ending List & A Notebook in Reverse Order
+# The Never Ending List & Notebook in Reverse Order
 
 Next up: Start Learning React Again.
 
 # A Bad Reaction to React
 
-I love JavaScript. It is my first programming language (unless you count an intro to BASIC on my Commodore 64 using spaghetti code aka goto statements). And like all first loves, every other encounter will be compared to it. I like HTML and CSS (with and without LESS and/or Flexbox). They are straight-forward, clean, and get the job done, but they lack the complexity of JavaScript. So, when I read about JSX merging JS and HTML, I was intrigued. However, this romance has gotten off to a rocky start with the end in sight. I quickly traversed through Denial and I am now stuck in Anger. To take the first step into bargaining with JSX, I decided to go back to the beginning and write.
+I love JavaScript. It is my first programming language (unless you count an intro to BASIC on my Commodore 64 using spaghetti code aka GOTO statements). And like all first loves, every other encounter will be compared to it. I like HTML and CSS (with and without LESS and/or Flexbox). They are straight-forward, clean, and get the job done, but they lack the complexity of JavaScript. So, when I read about JSX merging JS and HTML, I was intrigued. 
+
+However, this romance has gotten off to a rocky start. With the end in sight (since my React localhost sites are a mess), I am already grieving what could have been. I quickly traversed through Denial and I am now stuck in Anger. To take the first step into bargaining with JSX, I decided to go back to the beginning and write.
+
+## React 101
+
+
 
 # Gitting Started
 
