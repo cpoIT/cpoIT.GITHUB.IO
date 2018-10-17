@@ -7,8 +7,8 @@ Code and output are in `light grey boxes`. Sample output follows ==>.
 + Download Git from [Homebrew](https://brew.sh/)
 + Run commands from the command line using the built-in Terminal or iTerm2.
   + `git --version` (list current version on local computer)
-  + `git config --global user.name "Kat Fries"`
-  + `git config --global user.email katherynejf@gmail.com`
+  + `git config --global user.name "My Name"`
+  + `git config --global user.email myemail@gmail.com`
   + `git config –list` lists all Git settings
   + `git config user.name` will provide user's name
   + `man git` (full Git manual)
@@ -37,12 +37,12 @@ Code and output are in `light grey boxes`. Sample output follows ==>.
 +	**touch**: creates a new empty file inside the working directory or updates the access date of the file without opening, saving and closing the file. 
 +	**mkdir**: create a new empty folder
 
+#### Add, Commit, Push, Pull: Rinse & Repeat
 
-
-+	**add**: 
-+	**commit**: 
-+	**push**: 
-+	**pull**: 
++	**add**: once in the current directory to add all files: ```git add .```
++	**commit**: commit the add with a meaningful message: ```git commit -m "Finished component X. Next up, component Y."```
++	**push**: push the committed and added files with ```git push```
++	**pull**: go to get hub and create a pull request.
 +	**branch**: 
 +	**checkout**: 
 +	**merge**: 
@@ -51,43 +51,12 @@ Code and output are in `light grey boxes`. Sample output follows ==>.
 +	**cat-file**: 
 +	**hash-object**: 
 
+# A Bad Reaction to React
+
 
 
 
 # TO DO LIST
-
-These are common Git commands used in various situations:
-
-start a working area (see also: git help tutorial)
-   clone      Clone a repository into a new directory
-   init       Create an empty Git repository or reinitialize an existing one
-
-work on the current change (see also: git help everyday)
-   add        Add file contents to the index
-   mv         Move or rename a file, a directory, or a symlink
-   reset      Reset current HEAD to the specified state
-   rm         Remove files from the working tree and from the index
-
-examine the history and state (see also: git help revisions)
-   bisect     Use binary search to find the commit that introduced a bug
-   grep       Print lines matching a pattern
-   log        Show commit logs
-   show       Show various types of objects
-   status     Show the working tree status
-
-grow, mark and tweak your common history
-   branch     List, create, or delete branches
-   checkout   Switch branches or restore working tree files
-   commit     Record changes to the repository
-   diff       Show changes between commits, commit and working tree, etc
-   merge      Join two or more development histories together
-   rebase     Reapply commits on top of another base tip
-   tag        Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch      Download objects and refs from another repository
-   pull       Fetch from and integrate with another repository or a local branch
-   push       Update remote refs along with associated objects
 
 
 
