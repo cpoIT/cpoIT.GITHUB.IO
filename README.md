@@ -22,12 +22,13 @@ What is the fastest way to get things done? One could spend a lot of time creati
 
 JS keeps it promises. Ask JS to log something 2 seconds after it was called and it does even while do other things even if things have changed in the Greenwich Mean Time. When asking for a new Promise, strings (no not those types of strings) can be attached (e.g., was the parameter less than 1000). If everything goes smoothly, resolve runs then; if not, reject is there to catch and throw and error. 
 
-`let bigBang = 0;
+```
+let bigBang = 0;
 
 const bigBangTimer = timeValue => {
   return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      bigBang = timeValue;
+  setTimeout(() => {
+    bigBang = timeValue;
       return bigBang < 1000 ? reject(bigBang): resolve(bigBang);
     }, timeValue);
   })
@@ -37,11 +38,7 @@ bigBangTimer(2000)
     .then(response => console.log('Resolved in', bigBang/1000, 'second(s)'))
     .catch(error => console.log('Error:', error));
 console.log('after call')
-
-
-// before call
-// after call
-// Resolved in 2 second(s)`
+```
 
 ### AJAX: Asynchronous Javascript and XML
 
@@ -50,14 +47,16 @@ AJAX is not a new language, method, library, etc. It is a playbook of asynchrono
 1. Open a new React codesandbox;
 2. Convert the App component to a class;
 3. Add the following componentDidMount (CDM):
-    `componentDidMount() {
+```
+    componentDidMount() {
       console.log("inside CDM");
       fetch('https://dog.ceo/api/breed/husky/images')
         .then(res => res.json())
         .then(dogs => console.log("fetch completed");)
         .catch(err => console.log(err));
       console.log("below fetch");
-    }`
+    }
+```
 4. Open the project in a new browser, inspect it, click on newtork tab, then click on Headers, Preview, Response & Timing. 
 
 ### HTTP: Hypertext Transfer Protocol
