@@ -2,6 +2,7 @@
 # The Never Ending List & FILO Notebook
 
 Next up: Start Learning React Again.
+
 Most recent: Redux
 
 # A Bad Reaction to React
