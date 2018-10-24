@@ -81,6 +81,7 @@ CRUD is a way to store information. Information is created, read, updated (as ne
 
 Everyone has seen a 404 code. Yesterday, I got a 500 HTTP Error code from Youtube with a code monkey. But have you heard of a 418 I'm a Little Teapot error code? Yeah, me neither, but it existed. Want to improve UI? Be like [Lego](https://www.lego.com/404) or [Pixar](https://www.pixar.com/404) and create a 404 page to have the user laughing instead of being irritated by your incompetence.
 
+
 # Redux: At last the sun is shining
 
 ## What problem does Redux solve?
@@ -96,9 +97,9 @@ In other words, what if you want your original input to remain as is as well as 
 
 ### Answer to the Question is Another Question: What if we could store the original cake as is and replicate a particular piece every time a user needed to convert that piece? 
 
-Short answer: Redux.
+**Short answer: Redux.**
 
-Long answer:
+**Long answer:**
 
 ### First a quick review of React
 
