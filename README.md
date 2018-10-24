@@ -2,6 +2,7 @@
 # The Never Ending List & FILO Notebook
 
 Next up: Start Learning React Again.
+Most recent: Redux
 
 # A Bad Reaction to React
 
@@ -78,6 +79,57 @@ CRUD is a way to store information. Information is created, read, updated (as ne
 #### HTTP Status Code: I'm a Little Teapot
 
 Everyone has seen a 404 code. Yesterday, I got a 500 HTTP Error code from Youtube with a code monkey. But have you heard of a 418 I'm a Little Teapot error code? Yeah, me neither, but it existed. Want to improve UI? Be like [Lego](https://www.lego.com/404) or [Pixar](https://www.pixar.com/404) and create a 404 page to have the user laughing instead of being irritated by your incompetence.
+
+# Redux: At last the sun is shining
+
+## What problem does Redux solve?
+
+Traditional programming/mathematics:
+1. Import input;
+2. Convert input;
+3. Export output;
+
+### Question: What happens if you want your cake and eat it too?
+
+In other words, what if you want your original input to remain as is as well as get the value of the output? In React this is made difficult since **React relies upon using state, state is an object and in JS objects are mutable**. How are objects mutable? Simplistically, JS uses pointers to point to where an object (including ordered objects aka arrays and callable objects aka functions) exists in memory. So, when the input is an object and it is converted to output, the input and the output reflects the new value because the pointer is pointing to the same spot in memory. 
+
+### Answer to the Question is Another Question: What if we could store the original cake as is and replicate a particular piece every time a user needed to convert that piece? 
+
+Short answer: Redux.
+
+Long answer:
+
+### First a quick review of React
+
+React has one root component. That root component is made of many smaller components. The **React ideology** is to compartmentalize as much as necessary so that **each component can be worked on independently of each other**. Components are organized like a family tree where a child component passes information up to a parent component, which in turn passes it up to its parent (etc.) until it eventually reaches the root component.
+
+However, when state is being changed, that state is pushed up the tree from child to its parent, the parent will push state up to its parent (i.e., the child's grandparent) as well as perhaps push that state down to its other children (i.e., the child's siblings). (To take if further, if the grandparent pushes the changed state down, the child's aunts/uncles have the changed state and can pass it to the child's cousins.) So, if any of these other components mutate the state accidentally, there can be a catastrophic fail.
+
+### Enter Stage Left Redux.
+
+**In Redux, there is one Store with one root reducer**. That root reducer is made of many smaller reducers. Each reducer works independently on a different part of the state tree. The child passes the changed state to the Store and the Store passes state to only the components who need it. 
+
+But what is a reducer? In JS, .reduce is a method (aka a function) that combines two things and returns one thing. **In Redux, a reducer is a function takes two parameters -- the state and an action -- and returns the new state**. Every reducer should have a default position, which is return state without taking any action.
+
+Ok, so what is an action? **An action is a JS object wrapped inside a function**. Is your head spinning yet? Take a deep breath because we are almost there. An action is an object (wrapped inside a function) which tells you what action will be taken and what input it needs to take that action. The key 'type' summarizes the action to be taken and the key 'payload' provides the input. 
+
+```export const increment = () => {
+  return {
+    type: INCREMENT,
+    payload: 1
+   }
+}
+```
+or
+```export const addTodo = todo => ({
+  return {
+    type: ADD_TODO,
+    payload: todo
+   }
+})
+```
+
+
 
 # Gitting Started
 
