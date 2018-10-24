@@ -102,18 +102,26 @@ Long answer:
 
 ### First a quick review of React
 
+#### React Root Component
 React has one root component. That root component is made of many smaller components. The **React ideology** is to compartmentalize as much as necessary so that **each component can be worked on independently of each other**. Components are organized like a family tree where a child component passes information up to a parent component, which in turn passes it up to its parent (etc.) until it eventually reaches the root component.
 
+
+#### State of the State
 However, when state is being changed, that state is pushed up the tree from child to its parent, the parent will push state up to its parent (i.e., the child's grandparent) as well as perhaps push that state down to its other children (i.e., the child's siblings). (To take if further, if the grandparent pushes the changed state down, the child's aunts/uncles have the changed state and can pass it to the child's cousins.) So, if any of these other components mutate the state accidentally, there can be a catastrophic fail.
 
 ### Enter Stage Left Redux.
 
+#### The Store & One Root (Reducer) to Rule Them All
 **In Redux, there is one Store with one root reducer**. That root reducer is made of many smaller reducers. Each reducer works independently on a different part of the state tree. The child passes the changed state to the Store and the Store passes state to only the components who need it. 
 
+#### Reducers
 But what is a reducer? In JS, .reduce is a method (aka a function) that combines two things and returns one thing. **In Redux, a reducer is a function takes two parameters -- the state and an action -- and returns the new state**. Every reducer should have a default position, which is return state without taking any action.
 
+#### Actions
 Ok, so what is an action? **An action is a JS object wrapped inside a function**. Is your head spinning yet? Take a deep breath because we are almost there. An action is an object (wrapped inside a function) which tells you what action will be taken and what input it needs to take that action. The key 'type' summarizes the action to be taken and the key 'payload' provides the input. 
 
+
+##### Actions in Action
 ```export const increment = () => {
   return {
     type: INCREMENT,
