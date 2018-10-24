@@ -118,16 +118,16 @@ Ok, so what is an action? **An action is a JS object wrapped inside a function**
     type: INCREMENT,
     payload: 1
    }
-}
-```
+}```
+
 or
+
 ```export const addTodo = todo => ({
   return {
     type: ADD_TODO,
     payload: todo
    }
-})
-```
+})```
 
 
 
