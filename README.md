@@ -146,6 +146,7 @@ Create a React App using class (because we can, not because it is necessary).
 
 
 ```**src/App.js**```
+
 ```import React, { Component } from 'react';
 import "./styles.css";```
 
