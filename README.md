@@ -123,6 +123,7 @@ Ok, so what is an action? **An action is a JS object wrapped inside a function**
 
 
 ##### Actions in Action
+
 ```
 export const increment = () => {
   return {
@@ -151,7 +152,7 @@ Create a React App using class (because we can, not because it is necessary).
 
 ```**src/App.js**```
 
-```
+```React
 import React, { Component } from 'react';
 import "./styles.css";
 
@@ -175,7 +176,7 @@ Here is a simple Root Reducer that establishes state using an object to hold an 
 
 ```**src/js.reducers/index.js**```
 
-```
+```React
 const intialState = {
   todos: []
 }
@@ -189,7 +190,7 @@ After importing the basics (including our App and rootReducer), create a Store a
 
 ```**src/index.js**```
 
-```
+```React
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
