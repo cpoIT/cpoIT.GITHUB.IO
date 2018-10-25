@@ -24,7 +24,7 @@ What is the fastest way to get things done? One could spend a lot of time creati
 
 JS keeps it promises. Ask JS to log something 2 seconds after it was called and it does even while do other things even if things have changed in the Greenwich Mean Time. When asking for a new Promise, strings (no not those types of strings) can be attached (e.g., was the parameter less than 1000). If everything goes smoothly, resolve runs then; if not, reject is there to catch and throw and error. 
 
-```
+```javascript
 let bigBang = 0;
 
 const bigBangTimer = timeValue => {
@@ -49,7 +49,7 @@ AJAX is not a new language, method, library, etc. It is a playbook of asynchrono
 1. Open a new React codesandbox;
 2. Convert the App component to a class;
 3. Add the following componentDidMount (CDM):
-```
+```javascript
     componentDidMount() {
       console.log("inside CDM");
       fetch('https://dog.ceo/api/breed/husky/images')
@@ -124,7 +124,7 @@ Ok, so what is an action? **An action is a JS object wrapped inside a function**
 
 ##### Actions in Action
 
-```
+```javascript
 export const increment = () => {
   return {
     type: INCREMENT,
@@ -135,7 +135,7 @@ export const increment = () => {
 
 or
 
-```
+```javascript
 export const addTodo = todo => ({
   return {
     type: ADD_TODO,
@@ -150,9 +150,9 @@ export const addTodo = todo => ({
 Create a React App using class (because we can, not because it is necessary).
 
 
-```**src/App.js**```
+**src/App.js**
 
-```React
+```javascript
 import React, { Component } from 'react';
 import "./styles.css";
 
@@ -174,9 +174,9 @@ export default App;
 #### Let's Put Down Some Roots: Creating a Root Reducer
 Here is a simple Root Reducer that establishes state using an object to hold an empty array with the key todos.
 
-```**src/js.reducers/index.js**```
+**src/js.reducers/index.js**
 
-```React
+```javascript
 const intialState = {
   todos: []
 }
@@ -188,9 +188,9 @@ export default rootReducer;
 #### Harvesting and Storing the Root Reducer: Create a Store
 After importing the basics (including our App and rootReducer), create a Store and render App after wrapping it in Provider.
 
-```**src/index.js**```
+**src/index.js**
 
-```React
+```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
