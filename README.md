@@ -49,7 +49,7 @@ AJAX is not a new language, method, library, etc. It is a playbook of asynchrono
 1. Open a new React codesandbox;
 2. Convert the App component to a class;
 3. Add the following componentDidMount (CDM):
-```javascript
+```jsx
     componentDidMount() {
       console.log("inside CDM");
       fetch('https://dog.ceo/api/breed/husky/images')
@@ -124,7 +124,7 @@ Ok, so what is an action? **An action is a JS object wrapped inside a function**
 
 ##### Actions in Action
 
-```javascript
+```jsx
 export const increment = () => {
   return {
     type: INCREMENT,
@@ -135,7 +135,7 @@ export const increment = () => {
 
 or
 
-```javascript
+```jsx
 export const addTodo = todo => ({
   return {
     type: ADD_TODO,
@@ -176,7 +176,7 @@ Here is a simple Root Reducer that establishes state using an object to hold an 
 
 **src/js.reducers/index.js**
 
-```javascript
+```jsx
 const intialState = {
   todos: []
 }
@@ -190,7 +190,7 @@ After importing the basics (including our App and rootReducer), create a Store a
 
 **src/index.js**
 
-```javascript
+```jsx
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
