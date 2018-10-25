@@ -147,9 +147,9 @@ Create a React App using class (because we can, not because it is necessary).
 
 ```**src/App.js**```
 ```import React, { Component } from 'react';
-import "./styles.css";
+import "./styles.css";```
 
-class App extends Component {
+```class App extends Component {
   render () {
     return (
       <div className="App">
@@ -158,9 +158,9 @@ class App extends Component {
       </div>
     );
   }
-}
+}```
 
-export default App;```
+```export default App;```
 
 
 #### Let's Put Down Some Roots: Creating a Root Reducer
@@ -172,8 +172,8 @@ Here is a simple Root Reducer that establishes state using an object to hold an 
   todos: []
 }```
 
-```const rootReducer = (state - initialState, action => state;```
-```export default rootReducer;```
+```const rootReducer = (state - initialState, action => state;
+export default rootReducer;```
 
 #### Harvesting and Storing the Root Reducer: Create a Store
 After importing the basics (including our App and rootReducer), create a Store and render App after wrapping it in Provider.
@@ -186,11 +186,11 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux;
 import rootReducer from './reducers';
 import App from './App';
-import './index.css';
+import './index.css';```
 
-const store = createStore(rootReducer);
+```const store = createStore(rootReducer);```
 
-render(
+```render(
   <Provider store={store}>
     <App />
   </Provider>,
