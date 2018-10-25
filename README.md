@@ -173,7 +173,7 @@ Here is a simple Root Reducer that establishes state using an object to hold an 
   todos: []
 }```
 
-```const rootReducer = (state - initialState, action => state;
+```const rootReducer = (state = initialState, action => state;
 export default rootReducer;```
 
 #### Harvesting and Storing the Root Reducer: Create a Store
