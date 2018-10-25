@@ -113,7 +113,7 @@ However, when state is being changed, that state is pushed up the tree from chil
 ### Enter Stage Left Redux.
 
 #### The Store & One Root (Reducer) to Rule Them All
-**In Redux, there is one Store with one root reducer**. That root reducer is made of many smaller reducers. Each reducer works independently on a different part of the state tree. The child passes the changed state to the Store and the Store passes state to only the components who need it. 
+**In Redux, there is one Store with one root reducer**. That root reducer is made of many smaller reducers. Each reducer works independently on a different part of the state tree. The child passes the changed state to the Store and the Store passes state to only the components who need it. This way, state is being controlled.
 
 #### Reducers
 But what is a reducer? In JS, .reduce is a method (aka a function) that combines two things and returns one thing. **In Redux, a reducer is a function takes two parameters -- the state and an action -- and returns the new state**. Every reducer should have a default position, which is return state without taking any action.
@@ -139,7 +139,67 @@ or
    }
 })```
 
+### Putting It All Together
 
+#### Starting an App from Scratch: Show Some Class
+Create a React App using class (because we can, not because it is necessary).
+
+
+```**src/App.js**```
+```import React, { Component } from 'react';
+import "./styles.css";
+
+class App extends Component {
+  render () {
+    return (
+      <div className="App">
+        <h1>Hello World</h1>
+        <h2>The React Edition</h2>
+      </div>
+    );
+  }
+}
+
+export default App;```
+
+
+#### Let's Put Down Some Roots: Creating a Root Reducer
+Here is a simple Root Reducer that establishes state using an object to hold an empty array with the key todos.
+
+```**src/js.reducers/index.js**```
+
+```const intialState = {
+  todos: []
+}```
+
+```const rootReducer = (state - initialState, action => state;```
+```export default rootReducer;```
+
+#### Harvesting and Storing the Root Reducer: Create a Store
+After importing the basics (including our App and rootReducer), create a Store and render App after wrapping it in Provider.
+
+```**src/index.js**```
+
+```import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux;
+import rootReducer from './reducers';
+import App from './App';
+import './index.css';
+
+const store = createStore(rootReducer);
+
+render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root')
+);```
+
+
+
+##### Exporting & Importing
 
 # Gitting Started
 
