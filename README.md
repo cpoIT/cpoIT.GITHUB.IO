@@ -14,6 +14,51 @@ However, this romance has gotten off to a rocky start. With the end in sight (si
 ## React 101
 **Add to never ending list**
 
+React was created by Facebook engineers to handle large amounts of data. It allows programmers to compartmentalize data into smaller bytes - pun intended. This makes it easier for multiple teams to work on the same project at the same time and it makes it easier to locate where the errors are in a program. 
+
+React is not a framework. It is a library -- it does one thing well -- it renders componenents. Framework vs. library debate -- is it worth the time to debate? Not really. JS developers are moving away from all encompassing frameworks (Angular) and toward library ecosystems.
+
+Virtual DOM: Virtual representation of what the DOM will be. To be discussed later. But in the mean time, instead of updating the entire Dom, using a virutal DOM is like updating on github. Instead of updating everything all at once, it looks to where the differences are an only updates those changes.
+
+State management flow. Can be done internally or by using a third-party application like Redux. To be discussed later.
+
+### Hello World in JSX
+
+Want a React sandbox? Try codesandbox.io Create React Sandbox
+
+**src/index.js**
+```jsx
+import React from "react";
+import ReactDOM from "react-dom";
+
+import "./styles.css";
+
+class HelloWorld extends React.Component {
+  render() {
+    return (
+    <div className="App">
+      <h1>Hello World</h1>
+      <h2>by {this.props.name}</h2>
+    </div>
+    );
+  }
+}
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <HelloWorld name="Kat" />,
+  rootElement
+);
+```
+==> Hello World
+    by Kat
+    
+- By convention, JS has shifted to using classes syntax and thus JSX has too;
+- Add a render to above the class's return;
+- When multiple lines are to be returned, wrap returns with ( <div> </div> );
+- ReactDom.render, looks for references to the current component within the entire application (i.e., document.getElementById("root"))
+
+
 ## AJAX, CRUD, & JS Promises
 
 What is the fastest way to get things done? One could spend a lot of time creating a Gannt chart to figure out the best order or you can wing it knowing that multitasking shorter tasks between longer tasks will be fastest. Sometimes you may want to set a timer (or [pomodoro](https://francescocirillo.com/pages/pomodoro-technique)) to help track when to do something.
