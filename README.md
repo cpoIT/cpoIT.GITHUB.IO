@@ -189,8 +189,101 @@ export const addTodo = todo => ({
 })
 ```
 
-### Putting It All Together
+##### Simplistic Reducer
+Here is a simple Root Reducer that establishes state using an object to hold an empty array with the key todos.
 
+
+**src/js.reducers/index.js**
+
+```jsx
+const intialState = {
+  todos: []
+}
+
+const rootReducer = (state = initialState, action) => state;
+export default rootReducer;
+```
+
+### Putting It All Together: Creating a Todo Application
+
+#### Start a Redux App from Scratch: Show Some Class
+- Create a React App using class (because we can, not because it is necessary). At this point, the app only consists of a header with an h1 tag. Add a style sheet (src/App.css).
+- Import App into the main index.js file and render it. Add a style sheet (src/index.css).
+
+**src/App.js**
+
+```jsx
+import React from 'react';
+import './App.css';
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Kat's Todo List</h1>
+        </header>
+      </div>
+    )
+  }
+}
+export default App;
+```
+
+**src/index.js**
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './index.css';
+
+const rootElement = document.getElementById("root");
+ReactDOM.render(
+  <App />,
+  rootElement
+);
+```
+
+#### Ready Set Action
+For consistency and readability:
+- HTML uses lowercase;
+- JS uses camelCase;
+- React uses UPPERCASE for constants. It also sets the constant variable to a string of the constant.
+- Every action has a type and usually a payload, which is the parameter.
+
+**src/actions/index.js**
+
+export const ADD_TODO = 'ADD_TODO';         // create (Crud)
+export const TOGGLE_TODO = 'TOGGLE_TODO'; 
+export const REMOVE_TODOS = 'REMOVE_TODOS'; // delete (cruD)
+export const GET_TODOS = 'GET_TODOS';       //read/fetch (cRud)
+
+ export const addTodo = todo => ({
+  type: 'ADD_TODO',
+  payload: todo
+})
+
+export const toggleTodo = id => ({
+  type: 'TOGGLE_TODO',
+  payload: id
+})
+
+export const removeTodos = () => ({
+  type: 'REMOVE_TODOS'
+})
+
+export const getTodos = todos => ({
+  type: 'TOGGLE_TODO',
+  payload: todos
+})
+
+
+#### Reducers
+
+
+
+**NEED TO DELETE**
 #### Starting an App from Scratch: Show Some Class
 Create a React App using class (because we can, not because it is necessary).
 
