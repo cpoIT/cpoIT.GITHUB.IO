@@ -1,5 +1,5 @@
-# Reflections of a Fullstack Software Engineer
-## Reminders International
+# Kate Fries | Fullstack Portfolio
+## Reminders International: Reflections of a Fullstack Software Engineer
 ### Week One
 This week 3 other engineers and I started a new project: Reminders International. Some people get excited by the smell of a new car or unwrapping the plastic off of a new journal. For me, getting assigned to a new project is bliss. At the beginning, there are endless possibilities about how this product will look and feel like. I like imagining what it would look like if there were no constraints. Then reality sets in and I start reviewing documentation and diagrams and piecing together all the information. After coordinating with the team, we create a Product Canvas. Then, while in a Zoom chat we started cloning the near-empty Github repositories into a terminal and initializing the front and back ends on VS Code. Eventually, a new Chrome tab opens before me with the mesmerizing sky blue React logo with `Welcome to React`. At this point, my fingers rest on the keyboard excited to begin the real work. 
 
